@@ -11,7 +11,7 @@ class Game
                 while !file_found
                     puts "please enter a valid game name"
                     filename = gets.chomp
-                    validate_filename(saved_games, filename)
+                    file_found = validate_filename(saved_games, filename)
                 end
                 read_game_data(filename)
             end
